@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.iphone-14-pro-max-2 {
+  animation-delay: 3000ms;
+  animation-name: dissolve;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+  background: #FFF;
+}
+
+@keyframes dissolve {
+  0% {
+    background: #000;
+  }
+
+  100% {
+    background: #FFF;
+  }
+}
