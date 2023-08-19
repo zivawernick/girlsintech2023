@@ -1,15 +1,15 @@
-import logo from './logo.svg';
+import logo from './name-logo.png';
 import './App.css';
 import Lottie from 'lottie-react';
 import * as LottiePlayer from "@lottiefiles/lottie-player";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
-//import { animationUrl } from './constants';
+import { animationUrl } from './Animation-1.mp4';
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+  <Router>
     <div>
       {/*
     <div className="App">
@@ -22,41 +22,42 @@ function App() {
             <img style={{width: 1000, height: 667, left: 631, top: 525, position: 'absolute', transform: 'rotate(180deg)', transformOrigin: '0 0'}} src="https://via.placeholder.com/1000x667" />
         </div>
   </div>*/
-  }
-    
-          <header className="App-header">
-              <h1>Girls in Tech 2023</h1>
-              <Player
-              autoplay
-              loop
-              src="https://lottie.host/346b67b0-1e4a-40e2-9782-ace9c64a363c/39w0Q1OxMe.json"
-              style={{ height: '300px', width: '300px', color: 'green'}}
-              keepLastFrame= {true}>
-              <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-              </Player>
-        {/*<img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-</p>*/}
-        <a
+}
+      <header className="App-header">
+        <Player
+          autoplay
+          loop={false}
+          src="https://lottie.host/6b8b3fa3-d60f-4a26-89e1-8e083206c3b0/JU6X8jFiZ2.json"
+          style={{ height: '300px', width: '300px', flex: 1, alignItems: 'left' }}
+          keepLastFrame= {true}
+        >
+          <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+        </Player>
+          <h1>Home Grown</h1>
+          {/*<img src={logo} {...logo} className="App-logo" alt="logo" flex={1} />*/}
+          <p>Grow. Nurish. Sell.</p>
+          <br></br>
+        <a 
           className="App-link"
-          href="https://reactjs.org"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
         >
           Getting Started
         </a>
+
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
+          flex={1}
         >
           Sign in
         </a>
       </header>
     </div>
-    </Router>
+  </Router>
   );
 };
 export default App;
